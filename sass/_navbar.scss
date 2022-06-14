@@ -1,0 +1,43 @@
+$primary: black;
+
+:root{
+    --primary: #{$primary}; // interpolación
+}
+
+.nav{
+    background-color: black;
+
+    /* Esto es mála práctica es mejor usar BEM
+    ul{
+        color: black;
+        li{
+            border: solid 2px green;
+        }
+    } */
+
+    &__container{
+        width: 90%;
+        margin: 0 auto;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item{
+        color: white;
+        text-decoration: none;
+
+        &--active{
+            color: aqua;
+            text-decoration: underline;
+
+            &:hover{
+                color: green;
+            }
+        }
+
+        
+    }
+    
+    
+}

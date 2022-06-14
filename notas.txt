@@ -1,0 +1,9 @@
+INTALAR SASS
+npm init -y
+npm install sass --save-dev
+
+COMPILAR SASS
+sass --watch ./ : ./ 
+ejemplo: sass -watch sass:css
+
+Para referenciar a otro archivo con @use es necesario que el archivo lleve "_" al inicio del nombre

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+:root {
+  --primary: black;
+}
+
+.nav {
+  background-color: black;
+  /* Esto es mála práctica es mejor usar BEM
+  ul{
+      color: black;
+      li{
+          border: solid 2px green;
+      }
+  } */
+}
+.nav__container {
+  width: 90%;
+  margin: 0 auto;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__item {
+  color: white;
+  text-decoration: none;
+}
+.nav__item--active {
+  color: aqua;
+  text-decoration: underline;
+}
+.nav__item--active:hover {
+  color: green;
+}
+
+h2 {
+  color: rebeccapurple;
+  background-color: aliceblue;
+}
+
+p {
+  color: crimson;
+}
+
+.hero__container {
+  height: calc(100vh - 70px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4274509804), rgba(0, 0, 0, 0.5215686275)), url("../galaxy-3608029_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__texts {
+  width: 90%;
+  color: #fff;
+}
+.hero__title {
+  font-size: 3.125rem;
+  margin-bottom: 0.625rem;
+}
+
+/* @use 'animaciones'; */
+
+/*# sourceMappingURL=style.css.map */
